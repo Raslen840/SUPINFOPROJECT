@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Mèmes en Ligne</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="https://newsroom.ionis-group.com/wp-content/uploads/2020/11/supinfo-logo-2020-quadri-png.png" alt="Logo" />
+        </div>
+        <h1>Générateur de Mèmes en Ligne</h1>
+    </header>
+    <main>
+        <section id="upload-section">
+            <input type="file" id="imageUpload" accept="image/*">
+        </section>
+        <section id="meme-section">
+            <canvas id="memeCanvas"></canvas>
+            <div id="text-controls">
+                <input type="text" id="memeText" placeholder="Votre texte">
+                <button id="addText">Ajouter du texte</button>
+            </div>
+        </section>
+        <section id="actions-section">
+            <button id="generateMeme">Générer le Mème</button>
+            <button id="downloadMeme">Télécharger</button>
+            <button id="shareMeme">Partager</button>
+        </section>
+        <section id="gallery-section">
+            <h2>Galerie des Mèmes</h2>
+            <div id="memeGallery"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
